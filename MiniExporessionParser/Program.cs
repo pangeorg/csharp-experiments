@@ -1,6 +1,6 @@
 ﻿using MiniExpressionParser;
 
-string source = "7 * 10 * (4 + 3)";
+string source = "1.1";
 
 Tokenizer tokenizer = new(source);
 List<Token> tokens = tokenizer.Scan();

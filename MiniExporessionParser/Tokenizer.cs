@@ -86,7 +86,7 @@ public class Tokenizer
   {
     if (c is null)
     {
-      throw new ArgumentNullException();
+      return false;
     }
 
     return c >= '0' && c <= '9';
@@ -96,7 +96,6 @@ public class Tokenizer
   {
     while (IsDigit(Peek()))
     {
-      Console.WriteLine(Peek());
       Advance();
     }
 
